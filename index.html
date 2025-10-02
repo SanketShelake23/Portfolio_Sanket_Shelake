@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanket Shelake | Full Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Sanket Santosh Shelake - Full Stack Developer specializing in MERN stack with 2+ years of experience building scalable web applications.">
+    <meta name="author" content="Sanket Santosh Shelake">
+    <meta name="keywords" content="Full Stack Developer, MERN Stack, Web Development, Portfolio, Sanket Shelake">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sanket Shelake | Full Stack Developer Portfolio">
+    <meta property="og:description" content="Portfolio of Sanket Santosh Shelake - Full Stack Developer specializing in MERN stack with 2+ years of experience.">
+    <meta property="og:type" content="website">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo" onclick="scrollToTop(event)">Sanket Shelake</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="#about" onclick="smoothScroll(event, '#about')">About Me</a>
+                    <a href="#skills" onclick="smoothScroll(event, '#skills')">Skills</a>
+                    <a href="#projects" onclick="smoothScroll(event, '#projects')">Projects</a>
+                    <a href="#achievements" onclick="smoothScroll(event, '#achievements')">Achievements</a>
+                    <a href="#contact" onclick="smoothScroll(event, '#contact')">Contact</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i data-lucide="moon" class="icon"></i>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="mobile-controls">
+                    <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
+                        <i data-lucide="moon" class="icon"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <i data-lucide="menu" class="icon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#about" onclick="smoothScroll(event, '#about')">About Me</a>
+                <a href="#skills" onclick="smoothScroll(event, '#skills')">Skills</a>
+                <a href="#projects" onclick="smoothScroll(event, '#projects')">Projects</a>
+                <a href="#achievements" onclick="smoothScroll(event, '#achievements')">Achievements</a>
+                <a href="#contact" onclick="smoothScroll(event, '#contact')">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Profile Image -->
+                <div class="hero-image">
+                    <div class="image-glow"></div>
+                    <img src="./myimg2.jpg" alt="Sanket Shelake" class="profile-img">
+                </div>
+                
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <p class="greeting">👋 Hi, I'm</p>
+                    <h1 class="name">Sanket Santosh Shelake</h1>
+                    <div class="typing-container">
+                        <h2 class="typing-text" id="typingText"></h2>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="description">
+                        I am a full-stack developer with over 1 year of experience in building scalable web applications. 
+                        Skilled in both front-end and back-end development, I specialize in the MERN stack and other modern 
+                        technologies to create seamless user experiences and efficient solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="smoothScroll(event, '#contact')">Get In Touch</button>
+                        <div class="social-links">
+                            <a href="https://in.linkedin.com/in/sanket-shelake-3183a6276" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                                <i data-lucide="linkedin" class="icon"></i>
+                            </a>
+                            <a href="https://github.com/sanketshelake23" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                                <i data-lucide="github" class="icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="gradient-text">Me</span></h2>
+                <p>Passionate about creating innovative solutions and building meaningful projects</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="card">
+                    <div class="card-icon gradient-bg">
+                        <i data-lucide="graduation-cap" class="icon-white"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Education</h3>
+                        <p><strong>B.Tech (Final Year)</strong></p>
+                        <p>Computer Science & Engineering</p>
+                        <p>Tatyasaheb Kore Institute of Engineering and Technology Warananagar</p>
+                        <p>Shivaji University Kolhapur</p>
+                        <p class="highlight">GPA: 9.09 / 10</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon gradient-bg">
+                        <i data-lucide="award" class="icon-white"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Experience</h3>
+                        <p>Over 1 year of experience in building scalable web applications</p>
+                        <p>Specialized in full-stack development with focus on modern web technologies</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon gradient-bg">
+                        <i data-lucide="heart" class="icon-white"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Interests</h3>
+                        <ul class="interests-list">
+                            <li>• Web Development</li>
+                            <li>• Technology Innovation</li>
+                            <li>• Problem Solving</li>
+                            <li>• Trekking & Drawing</li>
+                            <li>• Cricket</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card bio-card">
+                <p>
+                    I'm <strong>Sanket Santosh Shelake</strong>, a passionate full-stack developer currently pursuing my final year 
+                    in Computer Science & Engineering. With a strong academic record and hands-on experience in modern web technologies, 
+                    I focus on creating efficient, scalable solutions that solve real-world problems. Beyond coding, I enjoy exploring 
+                    new technologies, participating in hackathons, and contributing to technical communities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="gradient-text">Skills</span></h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="card skill-card">
+                    <div class="skill-icon gradient-bg">
+                        <i data-lucide="code" class="icon-white"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">C</span>
+                        <span class="tag">C++</span>
+                    </div>
+                </div>
+                
+                <div class="card skill-card">
+                    <div class="skill-icon gradient-bg">
+                        <i data-lucide="layout" class="icon-white"></i>
+                    </div>
+                    <h3>Front-End</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Bootstrap</span>
+                    </div>
+                </div>
+                
+                <div class="card skill-card">
+                    <div class="skill-icon gradient-bg">
+                        <i data-lucide="server" class="icon-white"></i>
+                    </div>
+                    <h3>Back-End & Database</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+                
+                <div class="card skill-card">
+                    <div class="skill-icon gradient-bg">
+                        <i data-lucide="wrench" class="icon-white"></i>
+                    </div>
+                    <h3>Tools & Other</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">DSA</span>
+                        <span class="tag">OOP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p>Innovative solutions to real-world problems</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="project-header">
+                        <h3>StayEase: Hotel & Villa Booking Platform</h3>
+                        <div class="project-date">
+                            <i data-lucide="calendar" class="icon-sm"></i>
+                            <span>June 2025</span>
+                        </div>
+                    </div>
+                    <ul class="project-description">
+                        <li>Developed a full-stack booking platform allowing users to seamlessly create, update, and manage property listings.</li>
+                        <li>Integrated secure user authentication and authorization to ensure safe and reliable access control.</li>
+                        <li>Implemented a dynamic map feature for location-based discovery, enhancing user experience and search efficiency by 35%.</li>
+                        <li>Designed and optimized a responsive UI using Bootstrap and MVC architecture for improved performance and maintainability.</li>
+                    </ul>
+                    <div class="project-impact">
+                        <i data-lucide="trending-up" class="icon-sm"></i>
+                        <span><strong>Impact:</strong> Improved user engagement and booking efficiency by 35%.</span>
+                    </div>
+                    <div class="project-tech">
+                        <p><strong>Tech Stack:</strong></p>
+                        <div class="tech-tags">
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">Bootstrap</span>
+                            <span class="badge">Node.js</span>
+                            <span class="badge">Express.js</span>
+                            <span class="badge">MongoDB</span>
+                            <span class="badge">MVC Architecture</span>
+                             <span class="badge">MapTiler</span>          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-header">
+                        <h3>CANETRACK: A Digital Sugarcane Registration and Verification Portal</h3>
+                        <div class="project-date">
+                            <i data-lucide="calendar" class="icon-sm"></i>
+                            <span>March 2025</span>
+                        </div>
+                    </div>
+                    <ul class="project-description">
+                        <li>Developed a full-stack web application enabling direct sugarcane registration by farmers, eliminating middlemen and reducing manual paperwork by 85%</li>
+                        <li>Used Leaflet.js and GPS mapping to validate land boundaries with up to 80% accuracy</li>
+                        <li>Automated harvesting list generation, improving efficiency and reducing sugarcane loss by 60%</li>
+                    </ul>
+                    <div class="project-impact">
+                        <i data-lucide="trending-up" class="icon-sm"></i>
+                        <span><strong>Impact:</strong> 85% reduction in paperwork, 60% reduction in crop loss</span>
+                    </div>
+                    <div class="project-tech">
+                        <p><strong>Tech Stack:</strong></p>
+                        <div class="tech-tags">
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">Node.js</span>
+                            <span class="badge">Express.js</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">Leaflet.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card project-card">
+                    <div class="project-header">
+                        <h3>Sorting Algorithm Analyzer</h3>
+                        <div class="project-date">
+                            <i data-lucide="calendar" class="icon-sm"></i>
+                            <span>November 2024</span>
+                        </div>
+                    </div>
+                    <ul class="project-description">
+                        <li>Developed a tool to evaluate and compare sorting algorithms on large datasets</li>
+                        <li>Achieved up to 40% reduction in processing time</li>
+                        <li>Improved decision-making by computing time-space trade-offs dynamically</li>
+                    </ul>
+                    <div class="project-impact">
+                        <i data-lucide="trending-up" class="icon-sm"></i>
+                        <span><strong>Impact:</strong> 40% faster processing time</span>
+                    </div>
+                    <div class="project-tech">
+                        <p><strong>Tech Stack:</strong></p>
+                        <div class="tech-tags">
+                            <span class="badge">C</span>
+                            <span class="badge">Data Structures</span>
+                            <span class="badge">Algorithms</span>
+                            <span class="badge">time.h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Achievements & <span class="gradient-text">Leadership</span></h2>
+                <p>Recognition and contributions to technical communities</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="card achievement-card">
+                    <div class="achievement-icon gradient-bg">
+                        <i data-lucide="trophy" class="icon-white"></i>
+                    </div>
+                    <h3>Smart India Hackathon 2024</h3>
+                    <p>Participated in national-level innovation challenge</p>
+                </div>
+                
+                <div class="card achievement-card">
+                    <div class="achievement-icon gradient-bg">
+                        <i data-lucide="award" class="icon-white"></i>
+                    </div>
+                    <h3>Ureka and Jidnyasa Competition 2023</h3>
+                    <p>National Level Competition at TKIET</p>
+                </div>
+                
+                <div class="card achievement-card">
+                    <div class="achievement-icon gradient-bg">
+                        <i data-lucide="code" class="icon-white"></i>
+                    </div>
+                    <h3>Top 10 in Oyster Code Competition 2023</h3>
+                    <p>Ranked among top 10 out of 200+ coders at RIT</p>
+                </div>
+                
+                <div class="card achievement-card">
+                    <div class="achievement-icon gradient-bg">
+                        <i data-lucide="code" class="icon-white"></i>
+                    </div>
+                    <h3>Logicode Coding Competitions 2023</h3>
+                    <p>Active participant in competitive programming events</p>
+                </div>
+                
+                <div class="card achievement-card">
+                    <div class="achievement-icon gradient-bg">
+                        <i data-lucide="award" class="icon-white"></i>
+                    </div>
+                    <h3>National Cadet Corps Certificate</h3>
+                    <p>Naval Wing certification</p>
+                </div>
+                
+                <div class="card achievement-card">
+                    <div class="achievement-icon gradient-bg">
+                        <i data-lucide="users" class="icon-white"></i>
+                    </div>
+                    <h3>Technical Support Leader</h3>
+                    <p>LOGICODE Coding Club (2024-25) - Led 7-member tech team, enabled 500+ registrations, launched 'Think Code Win' DSA series with 60% engagement boost</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <div class="section-header">
+                <h2>Get In <span class="gradient-text">Touch</span></h2>
+                <p>Feel free to reach out for collaborations or just a friendly chat</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-links">
+                            <a href="mailto:sanketshelake11@gmail.com" class="contact-link">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail" class="icon"></i>
+                                </div>
+                                <span>sanketshelake11@gmail.com</span>
+                            </a>
+                            <a href="https://in.linkedin.com/in/sanket-shelake-3183a6276" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <div class="contact-icon">
+                                    <i data-lucide="linkedin" class="icon"></i>
+                                </div>
+                                <span>linkedin.com/in/sanket-shelake</span>
+                            </a>
+                            <a href="https://github.com/sanketshelake23" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <div class="contact-icon">
+                                    <i data-lucide="github" class="icon"></i>
+                                </div>
+                                <span>github.com/sanketshelake23</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card opportunities-card">
+                        <p>Open to opportunities in full-stack development, internships, and collaborative projects. Let's build something amazing together!</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="card">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send" class="icon-sm"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Sanket Shelake. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
